@@ -21,14 +21,14 @@ public interface PostService {
 
     //get all posts
 
-    List<Post> getAllPost();
+    List<PostDto> getAllPost();
 
     //get single post
-    Post getPostById(Integer postId);
+    PostDto getPostById(Integer postId);
 
     //get all posts by category
 
-    List<Post> getPostByCategory(Integer categoryId);
+    List<PostDto> getPostByCategory(Integer categoryId);
 
     //get all posts by user
 
