@@ -35,10 +35,10 @@ public class CategoryController {
     @DeleteMapping("/{categoryId}")
     public ResponseEntity<ApiResponse> deleteCategory(@PathVariable ("categoryId") Integer catid) {
         this.categoryService.deleteCategory(catid);
-        return new ResponseEntity(new ApiResponse("Category deleted successfully",true), HttpStatus.OK);
+        return new ResponseEntity<>(new ApiResponse("Category deleted successfully",true), HttpStatus.OK);
     }
 
-    //GET- get single category
+    //GET-get single category
     @GetMapping("/{categoryId}")
     public ResponseEntity<CategoryDto> getCategory(@PathVariable Integer categoryId) {
         return ResponseEntity.ok(this.categoryService.getCategory(categoryId));
