@@ -1,6 +1,5 @@
 package com.mybloggingapp.services;
 
-import com.mybloggingapp.entities.Post;
 import com.mybloggingapp.payloads.PostDto;
 
 import java.util.List;
@@ -9,11 +8,11 @@ public interface PostService {
 
     //create
 
-    PostDto createPost(PostDto postDto);
+    PostDto createPost(PostDto postDto, Integer userId, Integer categoryId);
 
     //update
 
-    Post updatePost(PostDto postDto, Integer postId);
+    PostDto updatePost(PostDto postDto, Integer postId);
 
     //delete
 
@@ -32,10 +31,10 @@ public interface PostService {
 
     //get all posts by user
 
-    List<Post> getPostByUser(Integer userId);
+    List<PostDto> getPostByUser(Integer userId);
 
     //search posts
-    List<Post> searchPost(String keyword);
+    List<PostDto> searchPost(String keyword);
 
 
 }
