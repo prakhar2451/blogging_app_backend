@@ -1,9 +1,11 @@
 package com.mybloggingapp.services;
 
 import com.mybloggingapp.payloads.PostDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface PostService {
 
     //create

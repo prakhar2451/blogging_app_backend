@@ -2,9 +2,11 @@ package com.mybloggingapp.services;
 
 import com.mybloggingapp.entities.User;
 import com.mybloggingapp.payloads.UserDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface UserService {
 
    UserDto createUser(UserDto user);
