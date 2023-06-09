@@ -1,4 +1,4 @@
-package com.mybloggingapp.configuration;
+package com.mybloggingapp.config;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 
