@@ -73,6 +73,11 @@ public class UserServiceImpl implements UserService {
 		return null;
 	}
 
+	@Override
+	public UserDto registerNewUser(UserDto user) {
+		return null;
+	}
+
 	public User dtoToUser(UserDto userDto) {
 
 		User user = this.modelMapper.map(userDto, User.class);
